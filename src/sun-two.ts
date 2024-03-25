@@ -37,7 +37,6 @@ function twoSum(nums: number[], target: number): number[] {
   for (let i = 0; i < nums.length; i++) {
     if (tempObj[target - nums[i]] !== undefined) {
       return [tempObj[target - nums[i]], i]
-      break
     } else {
       tempObj[nums[i]] = i
     }
